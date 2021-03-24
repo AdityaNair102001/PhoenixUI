@@ -1,0 +1,269 @@
+.wrapper{
+    display: grid;
+    grid-template-areas: "n h h"
+                         "n m m"
+                         "f f f";
+    border: 1px solid black;
+    grid-template-columns: 0.4fr 2fr;
+    grid-template-rows: 0.2fr 2fr 1fr;
+    background-color: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FDE8E7;
+}
+
+.wrapper>header{
+    grid-area: h;
+    /* background-color:pink; */
+    width: fit-content;
+    margin:auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-family: 'Cormorant Unicase', serif;
+}
+
+.logo{
+    position: relative;
+    top: 6rem;
+    left: -3.5rem;
+}
+
+
+.wrapper>nav{
+    grid-area:n ;
+    background-color: black;
+    list-style-type:none;
+     
+}
+
+.wrapper>nav li{
+    color: rgb(255, 238, 0);
+    margin: 1rem;
+    font-size: 1.5rem;
+    /* font-family: 'Della Respira', serif; */
+    font-family: 'Della Respira', serif;;
+    /* text-shadow: 0  1px yellow, 0  1px yellow; */
+    text-align: center;
+
+
+}
+
+.wrapper>main{
+    grid-area: m;
+    background-color:  white;
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* border: 2px black solid; */
+    padding: 1rem;
+
+}
+
+.wrapper>footer{
+    grid-area:f;
+    background-color: crimson;
+}
+
+
+.avatar-container{
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-start;
+    padding:2rem;
+
+}
+
+.avatar-lg{
+    width: 190px; min-height: 190px; border-radius: 70%;border: pink 3px solid;
+}
+
+.avatar-md{
+    width: 150px; max-height: 150px; border-radius: 50%;border: pink 3px solid;
+}
+
+.avatar-sm{
+    width: 90px; max-height: 90px; border-radius: 50%;border: pink 3px solid;
+}
+
+.alert-holder{
+    padding: 1rem;
+}
+
+.alert-text{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.alert-successful{
+    width:600px;
+    min-height: 50px;
+    background-color:rgb(123, 224, 123); 
+    border:4px solid rgb(20, 139, 36); 
+    /* margin-left: auto;
+    margin-right: auto;  */
+    text-align: center;   
+    padding-top: 2rem;
+    margin:1rem;
+}
+
+.alert-error{
+    width:600px;
+    min-height: 50px;
+    background-color:red; 
+    border:4px solid rgb(151, 9, 9); 
+    /* margin-left: auto;
+    margin-right: auto;  */
+    text-align: center;   
+    padding-top: 2rem;
+    margin: 1rem;
+}
+
+.alert-warning{
+    width:600px;
+    min-height: 50px;
+    background-color:yellow; 
+    border:4px solid rgb(219, 219, 19); 
+    /* margin-left: auto;
+    margin-right: auto;  */
+    text-align: center;   
+    padding-top: 2rem;
+    margin: 1rem;
+}
+
+.primary-button-blue{
+    min-height: 3rem;
+    min-width: 10rem;
+    border-top-right-radius: 10px;
+    background-color:rgb(170, 196, 243);
+    font-weight: bold;
+    color:black;
+}
+.secondary-button-blue{
+    min-height: 3rem;
+    min-width: 10rem;
+    border-top-right-radius: 10px;
+    background-color:white;
+    font-weight: bold;
+    color: black;
+    border: 2px black solid;
+}
+
+.primary-button-maroon{
+    min-height: 3rem;
+    min-width: 10rem;
+    border-top-right-radius: 10px;
+    background-color: #822659;
+    font-weight: bold;
+    color: white;
+}
+
+.secondary-button-maroon{
+    min-height: 3rem;
+    min-width: 10rem;
+    border-top-right-radius: 10px;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    border:2px #822659 solid;color: #822659;
+
+}
+/* #E85832; */
+
+/* rgb(170, 196, 243) */
+
+.icon-cart{
+    min-height: 50px;
+    min-width: 50px;
+    background-image: url("https://img.icons8.com/material-two-tone/50/000000/shopping-cart-promotion.png");
+    background-size: contain;
+}
+
+
+
+.icon-notification{
+    min-height: 50px;
+    min-width: 50px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAABcElEQVRoge2ZO07DQBRFD6BQwA6ipEZiGdAQCip+NT2swywCCkQTsoIUbCWRIggNn4CAIgqBAlsCB3sy4/nY4h3pNrbevHstjzWeAUEQXLAMnAJD4BaI4muVIQI+U4qCOtJkyGyAOxeNFlwMyrdhL/2WLI9XB46ArYz7I2AAvFruW5gGcA5MmH110poAZ3FNKdgBnlAbT+sF2Avg9xcnwBR984mmwLF31zEHFDOf6APY9+ydOvBY0PhPjfA8Jy4tmk904ct8Axg7CDAGmrpmFg0CHAI1gzoVNWBXt8gkwIZBzbxs6haYBFg3qHE2tsna5A1YMaibh3dgVafAJEDWQs0WWp5MXqFSIQFCIwFCIwFCIwEEQSg/20Af+7+QKvWBlo0AgwDmE92ozP2Lz2gL6OH/6ffI3iR2SifHVDuEIV3yNnofbDdzMQfyzhxsn0c4CXCdc6/roJ911vh74/eeEh1qqGgCV8BzrDYVMi8IVeIL2EwJyD35ogUAAAAASUVORK5CYII=");
+    background-size: contain;
+}
+
+
+
+.icon-setting{
+   
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAyNCAyNCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48cGF0aCBkPSJNMTkuOSwxMy4zQzIwLDEyLjgsMjAsMTIuNCwyMCwxMnMwLTAuOC0wLjEtMS4zTDIxLjgsOWwtMi4zLTRsLTIuNCwwLjhjLTAuNy0wLjUtMS40LTEtMi4yLTEuM0wxNC4zLDJIOS43TDkuMiw0LjUJQzguMyw0LjgsNy42LDUuMyw2LjksNS44TDQuNSw1TDIuMiw5bDEuOSwxLjdDNCwxMS4yLDQsMTEuNiw0LDEyYzAsMC40LDAsMC44LDAuMSwxLjNMMi4yLDE1bDIuMyw0bDIuNC0wLjhsMCwwCWMwLjcsMC41LDEuNCwxLDIuMiwxLjNMOS43LDIyaDQuN2wwLjUtMi41YzAuOC0wLjMsMS42LTAuNywyLjItMS4zbDAsMGwyLjQsMC44bDIuMy00TDE5LjksMTMuM0wxOS45LDEzLjN6IE0xMiwxNgljLTIuMiwwLTQtMS44LTQtNGMwLTIuMiwxLjgtNCw0LTRjMi4yLDAsNCwxLjgsNCw0QzE2LDE0LjIsMTQuMiwxNiwxMiwxNnoiPjwvcGF0aD48L3N2Zz4=') 50% 50% no-repeat;
+        background-size: 100%; 
+}
+
+
+.vertical-card{
+    display: flex;
+    flex-direction: column;
+    border: rgb(180, 176, 176) 1px solid;
+    height: fit-content;
+    width: 250px;
+    padding: 0rem;
+    justify-self: center;
+    margin: 1rem;
+    /* background-color: rgb(161, 150, 150); */
+}
+
+.vertical-card>h3{
+    text-align: center;
+    font-weight: bold;
+}
+
+.product-title{
+    font-family:  'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    /* margin: 0px; */
+    
+}
+.product-description{
+    font-family:  'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.product-card-icon{
+    min-height: 25px;
+    min-width: 25px;
+    background-image: url("https://img.icons8.com/material-two-tone/50/000000/shopping-cart-promotion.png");
+    background-size: contain;
+    position: relative;
+    top: 0.5rem;
+}
+
+.product-card-text{
+    font-size: large;
+    margin: 0.5rem;
+}
+
+.horizontal-card{
+    display: flex;
+    border:1px black solid;
+    width: 450px;
+    height: 150px;
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: space-between;
+}
+
+.notification{
+    background-color:#f8a1d1;
+    color: white;
+    text-decoration: none;
+    padding: 15px 26px;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.notification .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: #b34180;
+    color: white;
+  }
