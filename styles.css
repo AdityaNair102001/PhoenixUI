@@ -501,7 +501,7 @@ input:focus::-webkit-input-placeholder {
       display: flex;
       justify-content: flex-start;
       position:absolute;
-      left: 88%;
+      left: 85%;
       bottom:0.5rem
   }
 
