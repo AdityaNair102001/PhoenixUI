@@ -45,10 +45,10 @@ body{
     display: grid;
     grid-template-areas: "n m m"
                          "n m m"
-                         "f f f";
+                         "n f f";
     border: 1px solid black;
-    grid-template-columns: 0.7fr 2fr;
-    grid-template-rows: 0.1fr 2fr 0.05fr;
+    grid-template-columns: 0.7fr 2.8fr;
+    grid-template-rows: 0.1fr 2fr 0.005fr;
    
 }
 
@@ -77,7 +77,7 @@ body{
 }
 
 
-.wrapper>nav{
+.navigation{
     grid-area:n ;
     background-color: black;
     list-style-type:none;
@@ -122,21 +122,32 @@ body{
 
 .wrapper>footer{
     grid-area:f;
-    background-color: rgb(28, 255, 85);
+    background-color: rgb(241, 170, 170);
+    color: white;
+}
+
+
+.subtitle{
+    font-family:  'Montserrat', 'sans-serif';
+    font-size: 2rem;
+}
+
+.description{
+    font-family: 'Mukta', sans-serif;
 }
 
 
 .avatar-container{
     display: flex;
     align-content: flex-end;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     column-gap: 1rem;
     padding:2rem;
 
 }
 
 .avatar-lg{
-    width: 190px; min-height: 190px; border-radius: 70%;border: rgb(236, 109, 151) 3px solid;
+    width: 190px; height: 190px; border-radius: 70%;border: rgb(236, 109, 151) 3px solid;
 }
 
 .avatar-md{
@@ -263,6 +274,7 @@ body{
     background-image: url("https://img.icons8.com/material-two-tone/50/000000/shopping-cart-promotion.png");
     background-size: contain;
 }
+
 
 
 
@@ -463,4 +475,56 @@ input:focus::-webkit-input-placeholder {
       
       padding: 0.5rem;
       border-radius: 1rem;
+      
   }
+
+  .navbar{
+      height: 20vh;
+      width: 100%;
+      background-color: rgba(34, 33, 32, 0.226);
+      position: relative;
+
+  }
+
+  .navbar-brand{
+      text-align: center;
+      font-size: 3rem;
+      width: fit-content;
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+     
+  }
+
+  .navbar-icon-holder{
+      display: flex;
+      justify-content: flex-start;
+      position:absolute;
+      left: 88%;
+      bottom:0.5rem
+  }
+
+  /* .navbar-icon-cart{
+      position:absolute;
+      left: 90%;
+      bottom:0.5rem
+  }
+
+  .navbar-icon-wishlist{
+    position:absolute;
+    left: 95%;
+    bottom:0.5rem
+  } */
+  
+
+
+.list-non-bullet{
+    list-style: none;
+}
+.list-item-inline{
+    display: inline;
+    padding: 0rem 0.5rem;
+    font-size: x-large;
+    margin: 2rem;
+}
