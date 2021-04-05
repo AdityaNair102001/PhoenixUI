@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&display=swap');
+    </style>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+
+
+</head>
+<body style="  background-color: var(--libprimarycolor);
+margin:0px;">
+    <div class="wrapper"> 
+        
+
+        <nav class="navigation">
+            <li><header class="header">
+                <img class="logo" src="data:image/png;base64,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"/>
+                <h1 class="logo-name" style="color: #ffe6e6;">Phoenix<span style="color:rgba(208, 11, 11)">UI</span></h1> 
+             </header></li>
+            <a href="#introduction" style="text-decoration: none;"><li class="item">Introduction</li></a>
+            <a href="#avatar" style="text-decoration: none;"><li class="item">Avatar</li></a>
+            <a href="#alert" style="text-decoration: none;"><li class="item">Alert</li></a>
+            <a href="#button" style="text-decoration: none;"><li class="item">Button</li></a>
+            <a href="#cards" style="text-decoration: none;"><li class="item">Cards</li></a>
+            <a href="#inputfield" style="text-decoration: none;"><li class="item">Input Field</li></a>
+            <a href="#badge" style="text-decoration: none;"><li class="item">Badge</li></a>
+            <a href="#lists" style="text-decoration: none;"><li class="item">Lists</li></a>
+            <a href="#modal" style="text-decoration: none;"><li class="item">Modal</li></a>
+            <a href="#navbar" style="text-decoration: none;"><li class="item">Navigation Bar</li></a>
+
+        </nav>
+
+        <main>
+            <a id="introduction"><h2 style="font-size: 3rem;  color:black;text-align: left; font-family: 'Montserrat', 'sans-serif';">Install</h2></a>
+            <div style="font-size: 1.5rem; text-align: left; font-family: 'Montserrat','sans-serif'; margin: 1rem;">Just add the following code segment in your html index file and you are good to go.</div>
+            <div><iframe
+                src="https://carbon.now.sh/embed/tGmrMHDJyUkg0Qs64yVK"
+                style="width: 766px; height: 205px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe></div>
+            <div class="cardview">
+            <a id="avatar"><h3 class="subtitle">Avatar</h3></a>
+            <h2 class="description">Avatars are graphical representation of users, signifying their profile and personality. Different sizes of avatars are displayed below.</h2>
+            <div style="align-content: center;">
+            <div class="avatar-container" >
+                <img class="avatar-lg" src="https://imgmedia.lbb.in/media/2021/01/60055a9a8d54503154eff05a_1610963610550.jpg">
+                <img class="avatar-md" src="https://imgmedia.lbb.in/media/2021/01/60055a9a8d54503154eff05a_1610963610550.jpg" style="margin:2rem"> 
+                <img class="avatar-sm" src="https://imgmedia.lbb.in/media/2021/01/60055a9a8d54503154eff05a_1610963610550.jpg" style="margin:2rem">
+
+            </div>
+
+            <div style="text-align: center;">
+                <iframe
+            src="https://carbon.now.sh/embed/2vUoAuYdHXGYD6U7dgZA"
+            style="width: 80%; height: 242px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+            </div>
+            
+
+           </div>
+        </div>
+
+        
+
+            <div class="cardview">
+            <a id="alert"><h3 class="subtitle">Alert</h3></a>
+            <h2 class="description">Alert dialog boxes are used to alert users to important feedbacks and messages.</h2>
+            <div class="alert-holder">
+                <div class="alert-successful" style="margin: 1rem;
+                margin-left:35%">
+                   <span class="alert-text"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABmJLR0QA/wD/AP+gvaeTAAACNklEQVRIib2WPWgUQRTHf2+5aDCxEb9QNHvg3VnZmYCNYGkstFGbIFgJgmJIE2LOuY2IES+CH4gfjR+FveQEG2ujlSBye0IuKjFtjEcuGveluDlZicndZk//zc6bnXm/eTOPeQP/SRI2UlPmiKheAOkB7Vijz+/AhKJjJdcbXwbKlM1lRYfW6PyvUmSk5Jrsb5CN5DnwQ0SGEZ4Wd5vptTjPfDI70KBPVTxgHUiv75pCAkCUfgARzRa7ctfiRGEXOJqZyqIqV4F+oODYIPcDOLr4OA4krETgPLLNbgALohPgg3vla6tA75NmptbSjQCJuA7t+eYFPVN0vVcrjXNW+tGM0tNmsygPgbQi91cbGwvEgt4B3VYz5Pw/AaUnsycQjlvIA981hZaD9pQGtyBy05rl4CcDjeY0TIZU2VwUtKe9vXLy3fbrFQCnbf090K1AIOjpj6nct1ig9KTZCzoCsFDtHN83M9C7UN1wVNFjAKpyy0/mVsy0sFbdOt81RUXuAih6sFrteKnUt0yK84nZwWYgDUEIWuoyZ4HbtucAsAlYVP116suuG/OtAVmY35U7F4IhyGgpOfK6WUhzoDBM8YBniQpeFAhEuYIE9cldigqoK97NEB0kc2CLVouU/jy00/qeDYH0Te0T9LUKxGJb3ddbsGek6Jggh1TFy0xlQZwn8Uu55mo9QR5Cj5NU2XiCDseIYbkUz0/WEuiP51a6bA5Tq/Hd9coYXTIHTECQ913vRcylRtcSH5jPUDASsToAAAAASUVORK5CYII="/> Success!</span>
+                </div>
+                <div class="alert-error" style="margin: 1rem;
+                margin-left:35%">
+                    <span class="alert-text"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABmJLR0QA/wD/AP+gvaeTAAACWUlEQVRIic2UTWsTURSGn3NnktBqFSyIQrsQa5UWW9OgFNwUBUOI6a6gaxel9XvhRhBcCEKFVgou+gt0r2IUxKVCvwtuBMG1okip2mYy97hoTCdtJzPBIh4YOHPyvu9zz1wI/KOSRsTeidxpFRkDVDC3EvPP3u446FdP4ZBj/EWElspo2Vfb27RQ/BTHb+KCXMefCEAA9rjGTMT1x9rI68udUZXX2wZYzSYWX7yKyojcSIeGHFV5GPq7kQkdGHD/GuR9XBkBjteRdHnLzcNROXU/nXZn93lJ8wGktTJ6p2KHAUTNFNBfUX5NlGynvH/5LSyr7kZe0twNQEDkSmquuJSaKy4BVwPnbV3XhlcoaC2d6wIZCc6sleVqL/73WoeMrHsaBAHjQM0lC7Ya5OIc26R3BTPZEGg1nR8UJLtVrN1/elU9utWpZ1fT+cFYIO0eShr0wXZiNXKk2rPRbzrMuHbkUpGgcmrlBtC5XQhWOjZegn1NHS7vlmt1Qdpzbr+q3A4JQEUD4RoGQuGOZrIHg7Oay/acxH3QvWEBAgd+9uTamvBLHrSF6RBaPOveAy4FvOtV6s2lMTJDA3+0EWVR259cKE7zJ1RBEDMZAzINnKw8MxFaA864VpYRgLV0/oKgjyPPaJxMcvbpHEApU+jD+rNRFkUupuafPzGaKTQLOhYJAfB9W+3LZY1jEXRMM4Vmt+z7lxHaY4GEqVJffhRVAR7F8kB72bejrgqFmAaAU6hG3c2WUtHzRuBLo8ZGS4TPrufrdceVlCgDwK4dZvxQ5U3Zmps7nPsf1G/XfcBEVrCMaAAAAABJRU5ErkJggg=="/> Error!</span>
+                 </div>
+                 <div class="alert-warning" style="margin: 1rem;
+                 margin-left:35%">
+                    <span class="alert-text"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAACNUlEQVRIie2UTW8SYRSFD+8wMMwMn6UIQlqQgaEFOsMMH2nUFGwllaSJxrR+0KTG6MJdd900ceXaaozxR/gzTFy5wNhErYnYICZg4qa0kyLUVRtNQYamOz3L9z33PufexQX+6zSlqiqtqio9TI1xGHPARz0FgDfAA701RK9RluXgpYv2UuG8bUFRFOHUAWLE/CKb4sdWbnj8okA/0VtH6THNzKQv3y+fWWVMxNJothEaZzyNH/a31Wp9a1CtnglINGR+ZGWJU5nioUg8YmHWLoybHgKLAwMONBSLmbXVe96bHEdRPg8NQoADAFOTnKda/9Le+lR/deIJBEGwZSXujqZ1TckYe/TuchgRCTH0VJxdCQZlx4kBEzHnxkLRJYbGzD3/y9dGRVU2Pz4RQMpK0VLBWdzTOvD7egMazX3MXXDM53KpyaEB8XHL88QE60+IXN90qSQHOcl6haCl7xQ9AbN5+Wr5ujtjMABWvv8WOZbCz/YBlpdGpucKypI+QD5vFAV+nTETm5rsn/5QaZkDayLWcIhZ63WnjgFKpt31lcVRyT1CgxDDQAAhBjgdNO7e8kpeL1n/KyAQiLtyCnt7Z7djjAmWgc0PJYYZtFodKp3gl89Go+7f//64phmFe3ZlzhVpft/Huw97ugEAsKd1sFB0ntt839p4+RHLxwCSJMVtVqq4/VVrAcDn7eEAAFCtaeB4al6SpHilUtkEgKMlBwLTFkJ2fEN37aFul/9Wq70ePuG/qV/KUHqQpTYv+QAAAABJRU5ErkJggg=="/> Warning!</span>
+                 </div>
+                 <div style="text-align: center;">
+                    <iframe
+                    src="https://carbon.now.sh/embed/DaLXXzPbKqHQLePSfAZ7"
+                    style="width: 80%; height: 389px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                 </div>
+                
+
+
+            </div>
+        </div>
+
+            
+            <div id="button" class="cardview">
+           <a><h3 class="subtitle" name="Buttons" style="font-size: 2rem;">Buttons</h3></a> 
+           <h2 class="description">Buttons are generally of two kinds- Primary buttons and Secondary buttons.</h2>
+            <h2 class="description">Primary buttons are used to 
+                display important functions which the user most likely would want to perform.</h2> 
+            <h2 class="description"> Secondary
+                Buttons are used to signify less prominient operations.
+           </h2>
+            <div>
+             <div class="button-holder">
+                <div style="margin:1rem">
+                    <button class="primary-button-blue">Primary Button</button>
+                    <button class="primary-button-maroon" >Primary Button</button>
+                </div>
+                <div style="margin:1rem">
+                    <button class="secondary-button-blue">Secondary Button</button>
+                    <button class="secondary-button-maroon">Secondary Button</button>
+                </div>
+                <div style="margin:1rem">
+                    <button type="image"  class="icon-cart" ></button>
+                    <button type="image" class=icon-notification></button>
+                    <button type="image" class=icon-setting></button>
+                </div>
+             </div>
+             <div style="text-align: center;">
+                <iframe
+             src="https://carbon.now.sh/embed/uCv9J4D3cHrX5OJFQcqe"
+             style="width: 80%; height: 352px; border:0; transform: scale(1); overflow:hidden;"
+             sandbox="allow-scripts allow-same-origin">
+           </iframe>
+
+             </div>
+             
+            </div>
+          </div>
+             
+            <div class="cardview">
+             <a id="cards"><h3 class="subtitle" >Cards</h3></a>
+             <h2 class="description">Cards generally consists of 2-3 parts of important information.</h2>
+             <h2 class="description">The following is a product card with product title, product description, and price</h2>
+                <div class="cards-holder">
+                    <h2 style="margin:1rem">This is a product card</h2>
+                    <div class="vertical-card" style="margin:1rem;margin-left: 40%;">
+                        <img src="https://images.unsplash.com/photo-1497339100210-9e87df79c218?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8c2hpcnR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                        <p class="verticle-product-title">Black Coat</p>
+                        <p class="verticle-product-description">Black Leather Coat made with sizamo silk</p>
+                        <h3>Price: 5000Rs</h3>
+                        <button class="secondary-button-blue"><span class="product-card-text">Add to Cart</span></button>
+                    </div>
+
+                    <div class="horizontal-card">
+                        <img class="horizontal-card-image" src="https://m.media-amazon.com/images/I/71pZ3Pr8q+L._AC_UL480_FMwebp_QL65_.jpg">
+                        <div>
+                            <p class="horizontal-card-description">Product description</p>
+                            <button class="horizontal-card-button">+</button>0<button class="horizontal-card-button">-</button>
+                            <p>Rs 200/-</p>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center;">
+                    <iframe
+                    src="https://carbon.now.sh/embed/BYSR45WwbdmkXZwiOdqn"
+                    style="width: 80%; height: 352px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                  </div>
+
+                    
+                </div>
+              </div>
+                
+              <div class="cardview">
+             <a id="inputfield"><h3 class="subtitle" >Input Field</h3></a>
+             <h2 class="description">Textfields are used to take user input/information. Different sorts of textfield styles are available as follows.</h2>
+            <h2 class="description">Note:- Do not mix up different textfield styles in one form as its a bad design convention.</h2>
+             <h2 style="margin:1rem">Standard Input Field</h2>
+                <div class="inputtext-holder" style="margin:1rem;">
+                    <input class="input-standard"type="text" placeholder="Name" >
+                </div>
+             
+             <h2 style="margin:1rem">Outlined Input Field</h2>
+                <div class="inputtext-holder" style="margin:1rem;">
+                    <input class="input-outlined"type="text" placeholder="Name" >
+                </div>   
+                
+                <div style="text-align: center;">
+                <iframe
+                    src="https://carbon.now.sh/embed/zmYHbXmD2jAG3TlgYFDk"
+                    style="width: 80%; height: 315px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+                </div>
+            </div>
+                
+            <div id="badge" class="cardview">
+            <a><h3 class="subtitle">Badge</h3></a>
+            <h2 class="description">Badges indicate information/updates over icons. Badges on different kinds of icons are given below.</h2>
+                <div>
+                   
+                   <div style="margin:1rem">
+                    <h2>Badge on icon</h2>
+                    
+                        <div style="display: flex; column-gap: 1rem;justify-content: flex-start;margin-bottom: 1rem;">
+                            <button type="image"  class="notification icon-cart">
+                                <span class=badge-icon>3</span>
+                                 </button>
+        
+                                 <button type="image"  class="notification icon-notification" >
+                                <span class=badge-icon>2</span>
+                                </button>
+
+                        </div>
+                        
+                        <div style="text-align: center;">
+                        <iframe
+                             src="https://carbon.now.sh/embed/yYbwUJjFy0TrPXtGwZTo"
+                             style="width: 80%; height: 315px; border:0; transform: scale(1); overflow:hidden;"
+                             sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                        </div>
+
+                    <h2>Badge on avatar</h2>
+                        <div>
+                            <div>
+                                <img class="avatar-sm" src="dogprofile.jpg">
+                                <span class="badge-avatar">2</span> 
+                            </div>
+                            <div style="text-align: center;">
+                            <iframe
+                                src="https://carbon.now.sh/embed/fpY9VIibygO6Lptf26y8"
+                                style="width: 80%; height: 260px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                            <div style="text-align: center;">
+                        </div>
+                        
+                    </div>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+                
+                <div class="cardview">
+            <a id="lists"><h3 class="subtitle">Lists</h3></a>
+            <h2 class="description">Two types of lists are given below- stacked and spaced. </h2>
+            <div>
+                <div style="margin:1rem">
+                    <h2>Stacked Lists</h2>
+                    <div>
+                        <ul class="list-stacked">
+                            <li>Edit</li>
+                            <li>Delete</li>
+                            <li>History</li>
+                            <li>Settings</li>
+                        </ul>
+
+                        <div style="text-align: center;">
+                        <iframe
+                         src="https://carbon.now.sh/embed/yC9n8eYc6WjBGaXP9erp"
+                         style="width: 50%; height: 297px; border:0; transform: scale(1); overflow:hidden;"
+                         sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                         </div>
+                    </div>
+                    <h2>Spaced Lists</h2>
+                    <div>
+                        <ul class="list-spaced">
+                            <li>Edit</li>
+                            <li>Delete</li>
+                            <li>History</li>
+                            <li>Settings</li>
+                        </ul>
+                    </div>
+                    <div style="text-align: center;">
+                        <iframe
+                        src="https://carbon.now.sh/embed/K6NpXg2oAwfPiJCQsu56"
+                        style="width: 80%; height: 297px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                      </iframe>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="cardview">
+            <a id="modal"><h3 class="subtitle">Modal</h3></a>
+            <h2 class="description">A modal is like a dialog box which pops up and rest of the activity of screen is suspended or gets behind the background.</h2>
+            <div>
+                <div class="modal">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse necessitatibus at similique adipisci perferendis accusamus doloremque? Incidunt sint ab, voluptate ut quam, velit animi nam, reiciendis nobis accusantium autem laboriosam.</p> 
+                   <button class="model-button">Button in model</button>
+                </div>
+            </div>        
+            
+            <div style="text-align: center;">
+                <iframe
+                 src="https://carbon.now.sh/embed/h7fzXBmMxsqyGmKuJBPw"
+                style="width: 1024px; height: 370px; border:0; transform: scale(1); overflow:hidden;margin: 1rem;"
+                sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            </div>
+
+            <div class="cardview">
+                <a id="navbar"><h3 class="subtitle">Navigation Bar</h3></a>
+                <h2 class="description">A navigation bar is used to navigate through main parts of the web/app.</h2>
+                <nav class="navbar">
+                    <h1 class="navbar-brand">Brand Name</h1>
+                    <div class="navbar-icon-holder">
+                        <a  href="/" class="navbar-icon-cart"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAB/ElEQVRoge3Zz4tNYRzH8ddISEqJmOKWxWgsrSzMRqhhYSdbfwO2/gV7yWLsTCZlR7FFmayUck2YEM1whySKY3G6de9x7z3nnnnOj8l517O65/k+7895nvuc595DQ0NDklN4hain/cICtlXolZkl/fK97WKFXpl5bXiANjZVp5aNM3hveIjT1anlY87wMGW2Nk7kCXC0BvLd9jIpl2U9P8HTMUPXjiN4ofoZuFR00C6bsRhYfglbywpwObB8hHNlybfwLbD8Y0yUFeBuYPkIM6MGzFv0DXYkap0vQH4+7Y7lLXw2UWcn3gWW/4mpIgIMuivXAstHuJomnydAB5OJGjP4HVj+M3ZlCbBetuB5YPlIiUf3KwXIl/bQmsKPAgKU8tCawMMC5B8Z86GVpWgb2xP9LhQg38HhceSzBPiDk4k+e7ASUPwL7mB6XPksAeYG9LmZuOY7DuYZPASj5D9hd+L64+JZ6b2utHN6CO7rl38mPv9vGNb0BzhWrc74fBB+9xnU3mK2iADXSwoQiY/swdmL5Y0cAPbhBj4WKL+soCXUUAcO4LZ4S10Tvzs4VKN6I2lh1b9rdhX7a1AvlYUBg3XbrRrUS2XUn1adsuvV/m1LGnkCPBjx2b0a1EtlWvwDJDndK/J96ULXy0RLvO19FW978+scLHS9hob/hr9zZMo7Rt2hrgAAAABJRU5ErkJggg=="/> </a>
+                        <a href="/"  class="navbar-icon-wishlist"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAACNklEQVRoge3YPWvVYBiH8V9bK6jFUtD6UooOXVwcXLSTil9AEAURdNdBBAfRb+AsToofwEFQLHVxEHwbRCwWBEFBFEW0WBRqa7UOSerhmHOa5OQkKeSC/3BCuJ/rPkmeJ3moqampWS1sxBlM4COWsIA3mMQ5jCSoMxKeew9vwxpLYc0JnMZgnuJ9OI9v4UDtMo9rGI6pM4zr4Tkr1ZnFBfR3Kj+E+wkGbM4XHGioczA8lrbOY2zJKj+I5xkGbbwaJ8Ik+ddb5aX4K9qWHtzpYNAoC/iVQ50pDKRp4GQOg+ady0nlB/C5AsJxV3OsWbY3poEj2Jy02wLpx6kkJ04o/99ulVfNsj0xDbyXbEEqgz9YL5jV8P8ttAbbizRKSS+2NR9oZFHQZZWZb/wR9xDPFCSShd+CV5pl4hp4VoxLJqYx13ggroEHxbhkIpHbDsFzUPaUGZd9STudrIBsc6bET/uxjFdAuDlHk8pH3KqAdJSn4p/XtoziewXkF7EnrXzE8Qo0cCmrfMTVEuXvynDrNNOPhyXIv8OmTuUjRsOCRcnP6uC+b8WYf/tB3cwc9uctH7Fb8LLXLflFwRdhV9mLr12Qn5dhscrKLsGXW17yP3G4KPmInXjdofiSYLE8VLD7MlvxYgXBdpmR4g2zWwzhkfTyHwSTQiXYINguTyo/LVhbKsVa3LSy/BM5rrB504crWsvfxrrS7FJwVrCD0Ch/Q7DvtGo4hk/4gYslu3REX9kCNTU1FeYvT+fivmlYTZIAAAAASUVORK5CYII="/></a>
+                        <a href="/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAABpUlEQVRoge3Yv08UQRjG8Y+gRwk9lZYCIYr/h7H1R6WFscfoH6GRSLSz12hiLEX9J8DYa0dCgRASI3AWu5eY43bhZuYyq5lv8lR777zPs/tmZ+coFAqF/40lrGEL+7W28AyLGX2dygxe4Aj9Bh1iHb1MHhuZwRfNxof1WcdCvHR28wM9z+J0BEvax6ZtnBZim0/FLoB7getM426C/tF8Nf7dH2gzg98T7AkP8DO2eYoR6meqRZoAPyJqv8c2TxFgI6L2Y4L+0SyqXokhr9HLGfyOZN34AdayOG2gh0/Obn4DF7I4baGn+jxoG6dD1Z3vnPm/WcBT1Sa1V2sTT3Ro5guFQqE7TGE+oG5emm+xIGZxG++wg9+4Pkb9jbpmB29xq15z4lzFKxw4ucv+wiPVUbGJ83hc/3a4/qBe+8okjF/CGxyPaDysb1jFMuZqLeNhfe20+mO8xsVU5u+ojn6hx8ZQ7eJmrPkHGYwPP437oeavCfu/J7WOsBIS4EMHzA/0PiTAdgeMD7TdZPJcS4D+uIknzEiv2XbCVJQAufnnAxQKhUJe/gCyKGTbBPfqzgAAAABJRU5ErkJggg=="/></a>
+                    </div>
+                </nav>
+
+                <div style="text-align: center; margin:1rem">
+                    <iframe
+                        src="https://carbon.now.sh/embed/cATGuwiRBtfz7oyWN6Az"
+                        style="width: 1024px; height: 849px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>   
+                </div>
+            </div>
+            
+
+            <div class="cardview">
+                <a id="textutilities"><h3 class="subtitle">Text Utilities</h3></a>
+                <h2 class="description">Coming soon</h2>
+                
+            </div>
+           
+
+        </main>
+        <footer>
+            <ul style="text-align: center;" class="social-links list-non-bullet">
+                <li class="list-item-inline"><a class="link primary-link" href="https://github.com/AdityaNair102001"><img src="https://img.icons8.com/windows/32/000000/github.png"/></a></li>
+               <li class="list-item-inline"><a class="link primary-link" href="https://www.linkedin.com/in/aditya-nair-890530196/"><img src="https://img.icons8.com/android/24/000000/linkedin.png"/></a></li>
+                <li class="list-item-inline"><a class="link primary-link" href="https://twitter.com/AdityaN102001"><img src="https://img.icons8.com/metro/26/000000/twitter.png"/></a></li>
+            </ul>
+        </footer>
+    </div>
+    
+</body>
+</html>
