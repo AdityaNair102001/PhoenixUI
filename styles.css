@@ -227,7 +227,7 @@ html{
 .primary-button-maroon{
     min-height: 3rem;
     min-width: 10rem;
-    border-top-right-radius: 10px;
+    /* border-top-right-radius: 10px; */
     background-color: #822659;
     font-weight: bold;
     color: white;
