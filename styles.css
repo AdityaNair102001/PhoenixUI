@@ -204,8 +204,8 @@ html{
 .primary-button-blue{
     min-height: 3rem;
     min-width: 10rem;
-    border-top-right-radius: 10px;
-    /* background-color:rgb(170, 196, 243); */
+    /* border-top-right-radius: 10px; */
+    background-color:rgb(170, 196, 243);
     font-weight: bold;
     color:black;
 }
