@@ -365,7 +365,7 @@ html{
     padding-left: 0;
   -webkit-transition: padding 0.5s;
    transition: padding 0.5s;
-  
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
   
   }
 
@@ -374,6 +374,7 @@ input:focus::-webkit-input-placeholder {
   font-size: small;
   animation-name:example ;
   animation-duration: 1sec;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
   .inputtext-holder{
