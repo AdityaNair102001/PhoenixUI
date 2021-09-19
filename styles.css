@@ -366,6 +366,7 @@ html{
   -webkit-transition: padding 0.5s;
    transition: padding 0.5s;
   
+  
   }
 
 input:focus::-webkit-input-placeholder {
@@ -382,7 +383,7 @@ input:focus::-webkit-input-placeholder {
 
 .input-standard{
     border: none;
-    border-bottom: black 1px solid;
+    border-bottom: white 1px solid;
     padding: 1rem;
     padding-top: 2rem;
     width: 1000px;
