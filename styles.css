@@ -311,6 +311,11 @@ html{
     text-align: center;
 }
 
+.vertical-product-like{
+    float: right;
+    margin:0rem 1rem;
+}
+
 .product-card-icon{
     min-height: 25px;
     min-width: 25px;
@@ -354,7 +359,7 @@ html{
 
 
 ::-webkit-input-placeholder { 
-    color: grey;
+    color: white;
     font-size: large;
     position: relative;
     padding-left: 0;
