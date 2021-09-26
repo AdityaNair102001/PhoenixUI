@@ -387,15 +387,18 @@ input:focus::-webkit-input-placeholder {
     border-bottom: white 1px solid;
     /* padding: 1rem; */
     padding-top: 2rem;
-    width: 1000px;
+    width: 25%;
+    background-color: black;
+    color: white;
     font-size: large;
 }
 
 
 
+
 .input-standard:focus{
     border:black 1px solid;
-    background-color: rgb(224, 215, 215);
+    /* background-color: rgb(224, 215, 215); */
 }
 
 .input-outlined{
@@ -515,4 +518,12 @@ input:focus::-webkit-input-placeholder {
     padding: 0rem 0.5rem;
     font-size: x-large;
     margin: 2rem;
+}
+
+@media(max-width:40em){
+    .input-standard{
+        width: 100%;
+        background-color: black;
+        color: white;
+    }
 }
