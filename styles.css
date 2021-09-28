@@ -222,7 +222,7 @@ html{
 .secondary-button-blue:hover{
     background-color: black;
     color: white;
-    border:"1px white solid"
+    border:2px white solid;
 }
 
 .primary-button-maroon{
